@@ -2,16 +2,17 @@ import tweepy
 import time
 
 
+CONSUMER_KEY='AyKsfndL6WlssUzc6jvCyvujG'
+CONSUMER_SECRET='WMbNtQLZSlNp5VeQJJIu17snxboiXghS58TVF9Qb0hAyZOtgoi'
+ACCESS_KEY='1061398020506316800-hDchNMw8lbZvn8nfQ5mEJ9nN6mfRVa'
+ACCESS_SECRET='M9RVcx7al9fiDNJiEjlbDjgwrfJMmLM9MgDpo9IvVPJzb'
+
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 
-from os import environ
-CONSUMER_KEY='AyKsfndL6WlssUzc6jvCyvujG'
-CONSUMER_SECRET='WMbNtQLZSlNp5VeQJJIu17snxboiXghS58TVF9Qb0hAyZOtgoi'
-ACCESS_KEY='1061398020506316800-hDchNMw8lbZvn8nfQ5mEJ9nN6mfRVa'
-ACCESS_SECRET='M9RVcx7al9fiDNJiEjlbDjgwrfJMmLM9MgDpo9IvVPJzb'
+
 
 def retrieve_last_seen_id(file_name):
     f_read = open(file_name, 'r')
