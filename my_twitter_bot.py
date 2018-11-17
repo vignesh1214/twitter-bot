@@ -43,6 +43,5 @@ def reply_to_utd_tweet():
 
 while True:
     reply_to_utd_tweet()
-    time.sleep(1800)
 
 
